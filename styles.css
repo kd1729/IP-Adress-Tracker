@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  font-family: "Rubik", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+
+
+.searchbar {
+  display: flex;
+  justify-content: center;  
+}
+
+.search {
+  height: 50px;
+  width: 500px;
+  background-color: white;
+  border-radius: 13px 0 0 13px;
+  border: none;
+  font-size: 17px;
+  padding: 10px;
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.search:focus {
+  outline: none;
+}
+
+.searchbar button {
+  padding: 0 20px;
+  border-radius: 0 13px 13px 0;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background-color: hsl(0, 6%, 29%);
+}
+
+.warning{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: brown;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  height: 250px;
+  margin-top: 100px;
+  border: 6px solid black;
+  border-radius: 5px;
+}
+
+.ip-address,
+.location,
+.timezone,
+.ISP {
+  margin: 4% 2%;
+}
+
+.info h3 {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+}
+
+.info p {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vertical-line {
+  border-left: 2px solid;
+  margin-top: 3%;
+  height: 150px;
+}
+
+#mapid {
+  margin-top: 00px;
+  height: 1000px;
+  width: 100%;
+}
+
+
+button img{
+  height: 30px;
+  width: 30px;
+
+}
+/* .myButton {
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: linear-gradient(to bottom, #4d645e 5%, #a9f1f1 100%);
+  background-color: #81b8a9;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #dbdfd3;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+} */
+
+.attribution {
+  padding: 1rem 0;
+  background-color: rgb(205, 255, 209);
+  font-size: 32px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 500px) {
+  body {
+    background-size: 1000px auto;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-top: 1%;
+  }
+
+  .search {
+    width: 300px;
+    height: 2rem;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding-left: 0.5rem;
+  }
+
+  .myButton {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .ip-address,
+  .location,
+  .timezone,
+  .ISP {
+    margin-top: 0;
+  }
+  .info h3 {
+    font-size: 1rem;
+    color: grey;
+  }
+
+  .info p {
+    font-size: 2rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+
+  .attribution{
+    font-size: 20px;
+  }
+}
+
